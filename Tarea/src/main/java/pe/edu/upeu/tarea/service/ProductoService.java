@@ -11,7 +11,9 @@ import pe.edu.upeu.tarea.repository.ProductoRepository;
 
 @Service
 public class ProductoService {
+	
 	@Autowired
+	
 	ProductoRepository prodrep;
 	public List<Producto> readall(){
 		List<Producto> listprod = new ArrayList<>();
