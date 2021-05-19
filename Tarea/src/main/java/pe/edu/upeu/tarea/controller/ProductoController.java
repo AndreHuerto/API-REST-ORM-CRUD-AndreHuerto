@@ -38,6 +38,8 @@ public class ProductoController {
 	    proser.delete(id);
 	    return "Eliminado";
 	}
+	
+	
 	@PutMapping("/produc/update/{id}")
 	public Producto update(@PathVariable Long id,@RequestBody Producto prod) {
 	    Producto p = proser.read(id);
